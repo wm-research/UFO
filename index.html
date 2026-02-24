@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="description" content="UFO: Unifying Feed-Forward and Optimization-based Methods for Large Driving Scene Modeling">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UFO: Unifying Feed-Forward and Optimization-based Methods for Large Driving Scene Modeling</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/pku_logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <!-- <h1 class="title is-1 publication-title">RAD: Training an End-to-End Driving Policy via Large-Scale</h1>
+          <h1 class="title is-1 publication-title"> 3DGS-based Reinforcement Learning</h1> -->
+          <h1 class="title is-1 publication-title" style="white-space: nowrap;">
+            UFO: Unifying Feed-Forward and Optimization-based Methods 
+          </h1>
+          <h1 class="title is-1 publication-title" style="white-space: nowrap;">
+            for Large Driving Scene Modeling
+          </h1>
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a>Kaiyuan Tan</a><sup>1,2,*</sup>,
+            </span>
+            <span class="author-block">
+              <a>Yingying Shen</a><sup>1,*</sup>,
+            </span>
+            <span class="author-block">
+              <a>Ziyue Zhu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a>Mingfei Tu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a>Haohui Zhu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a>Bing Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a>Guang Chen</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a>Hangjun Ye</a><sup>1,✉</sup>,
+            </span>
+            <span class="author-block">
+              <a>Haiyang Sun</a><sup>1,†</sup>,
+            </span>
+            
+      
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Xiaomi EV</span>
+            <span class="author-block"><sup>2</sup>UIUC</span>
+            <p></p>
+            <span class="author-block"><sup>*</sup>Equal Contribution.</span>
+            <span class="author-block"><sup>†</sup>Project Leader.</span>
+            <span class="author-block"><sup>✉</sup>Corresponding Author.</span>
+
+          <!-- </div> -->
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/wm-research/UFO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Dynamic driving scene reconstruction is critical for autonomous driving simulation and closed-loop learning. While recent feed-forward methods have shown promise for 3D reconstruction, they struggle with long-range driving sequences due to quadratic complexity in sequence length and challenges in modeling dynamic objects over extended durations. We propose UFO, a novel recurrent paradigm that combines the benefits of optimization-based and feed-forward methods for efficient long-range 4D reconstruction.Our approach maintains a 4D scene representation that is iteratively refined as new observations arrive, using a visibility-based filtering mechanism to select informative scene tokens and enable efficient processing of long sequences. For dynamic objects, we introduce an object pose-guided modeling approach that supports accurate long-range motion capture. Experiments on the Waymo Open Dataset demonstrate that our method significantly outperforms both per-scene optimization and existing feedforward methods across various sequence lengths. Notably, our approach can reconstruct 16-second driving logs within 0.5 second while maintaining superior visual quality and geometric accuracy.
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="white-space: nowrap; display: inline-block;">Framework</h2>
+    <div class="content has-text-justified">
+      Given a long sequence of multi-view images, we reconstruct the 4D scene in a recurrent manner. (A) At each time step, we update the scene representation by refining previous scene tokens based on the new observation and
+adding new information from the current frame. (B) To efficiently handle long sequences, we employ a visibility-based filtering mechanism
+to select relevant scene tokens for updating. A unified transformer model learns to update the scene in a feed-forward manner. (C) Dynamic
+objects are modeled using 3D bounding boxes and per-Gaussian lifespans, enabling complex motion modeling over time
+      </div>
+    <img src="./assets/overview.png">
+  </div>
+</section>
+
+
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="white-space: nowrap; display: inline-block;">The inference process of original inpainting and asset insertion</h2>
+    <div class="content has-text-justified">
+      From top to bottom are the five types of 3D-aware guidance maps (depth, normal, edge, object image, object mask), the original condition images, and finally the result video generated by the driving world model.
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 40px; margin-top: 20px; align-items: center;">
+    
+      <div style="text-align: center; width: 100%;">
+        <h3 class="title is-5">Original Inpainting</h3>
+        <video controls width="100%">
+          <source src="./static/videos/inpainting_condition.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div style="text-align: center; width: 100%;">
+        <h3 class="title is-5">Asset Insertion</h3>
+        <video controls width="100%">
+          <source src="./static/videos/insert_car_condition.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<style>
+  .container.fixed-width {
+    max-width: 1000px; 
+    margin: 0 auto;
+  }
+  .title-container {
+    padding-left: 0px;  
+  }
+  .columns {
+    margin-top: 20px; 
+  }
+</style>
+
+<head>
+  <style>
+    .video-container-wrapper {
+      background-color: #f0f0f0; 
+      padding: 20px; 
+      border-radius: 5px; 
+    }
+
+    .video-container-wrapper video {
+      width: 100%; 
+      border-radius: 8px; 
+    }
+
+    .columns {
+      margin-bottom: 20px; 
+    }
+
+    .background-container {
+      background-color: #f0f0f0; 
+      padding: 30px; 
+      border-radius: 15px; 
+    }
+  </style>
+</head>
+
+
+
+<div style="margin-top: 30px;"></div>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div style="display:flex; align-items:center; justify-content:space-between;">
+        <h2 class="title is-3">BibTeX</h2>
+        <button id="copy-bibtex-btn" class="button is-small is-dark" aria-label="Copy BibTeX">Copy</button>
+      </div>
+      <pre><code>@article{UFO,
+  title={UFO: Unifying Feed-Forward and Optimization-based Methods for Large Driving Scene Modeling},
+  author={Kaiyuan Tan, Yingying Shen, Ziyue Zhu, Mingfei Tu, Haohui Zhu,
+Bing Wang, Guang Chen, Hangjun Ye, Haiyang Sun1},
+  url={} ,
+  year={2026}
+  }</code></pre>
+    </div>
+  </section>
+  
+  <script>
+    (function() {
+      const btn = document.getElementById('copy-bibtex-btn');
+      const codeEl = document.querySelector('#BibTeX pre code');
+      if (!btn || !codeEl) return;
+      const originalLabel = btn.textContent || 'Copy';
+      btn.addEventListener('click', async () => {
+        const text = codeEl.innerText;
+        try {
+          await navigator.clipboard.writeText(text);
+          btn.textContent = 'Copied';
+        } catch (e) {
+          // fallback
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand('copy'); btn.textContent = 'Copied'; }
+          catch { btn.textContent = 'Copy failed'; }
+          document.body.removeChild(ta);
+        }
+        setTimeout(() => { btn.textContent = originalLabel; }, 2000);
+      });
+    })();
+  </script>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2510.19195">
+        <i class="fas fa-file-pdf"></i>
+      </a> 
+      <a class="icon-link" href="https://github.com/wm-research/Dream4Drive" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The source code is borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>,
+              We thank the authors for sharing the templates.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
