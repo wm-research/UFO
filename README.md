@@ -9,8 +9,8 @@ Kaiyuan Tan<sup>1,2,\*</sup>, Yingying Shen<sup>1,*</sup>, Ziyue Zhu<sup>1</sup>
 (\*) Equal contribution. (†) Project leader. (✉)Corresponding Author.
 
 <!-- 等arxiv的地址 -->
-<a href=""><img src='https://img.shields.io/badge/arXiv-UFO-red' alt='Paper PDF'></a>
-<a href=""><img src='https://img.shields.io/badge/Project_Page-UFO-green' alt='Project Page'></a>
+<a href="https://arxiv.org/abs/2602.20943"><img src='https://img.shields.io/badge/arXiv-UFO-red' alt='Paper PDF'></a>
+<a href="https://wm-research.github.io/UFO/"><img src='https://img.shields.io/badge/Project_Page-UFO-green' alt='Project Page'></a>
 </div>
 
 
@@ -36,11 +36,13 @@ Dynamic driving scene reconstruction is critical for autonomous driving simulati
 If you find UFO is useful in your research or applications, please consider giving us a star 🌟 and citing it by the following BibTeX entry.
 
 ```bibtex
-@article{UFO,
-  title={UFO: Unifying Feed-Forward and Optimization-based Methods for Large Driving Scene Modeling},
-  author={Kaiyuan Tan, Yingying Shen, Ziyue Zhu, Mingfei Tu, Haohui Zhu,
-Bing Wang, Guang Chen, Hangjun Ye, Haiyang Sun1},
-  url={} ,
-  year={2026}
+@misc{tan2026ufounifyingfeedforwardoptimizationbased,
+      title={UFO: Unifying Feed-Forward and Optimization-based Methods for Large Driving Scene Modeling}, 
+      author={Kaiyuan Tan and Yingying Shen and Mingfei Tu and Haohui Zhu and Bing Wang and Guang Chen and Hangjun Ye and Haiyang Sun},
+      year={2026},
+      eprint={2602.20943},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2602.20943}, 
 }
 ```
